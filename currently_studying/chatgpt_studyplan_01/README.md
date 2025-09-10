@@ -1,0 +1,3 @@
+# My first AI study plan...
+
+I asked ChatGPT to give me a 60 day study plan that would help me brush up on my HTML and CSS, as well as learn the basics of SQL and Lava. I recently came across a job posting that requires knowledge of these languages, which lit a fire under my butt to get back into coding. Whether I get the job or not, I welcome this new opportunity to push myself & learn more each day.
