@@ -1,3 +1,46 @@
-h1 {
-    color: green;
+body {
+    background-color: #EEEFE0;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1, h2, small {
+    color: #819A91;
+}
+
+p, li {
+    color: #4B5945;
+}
+
+a:link {
+    color: #819A91;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #A7C1A8;
+}
+
+p label {
+    color: #A7C1A8;
+    font-weight: 800;
+}
+
+input {
+    border: 1px solid #66785F;
+    background-color: #EEEFE0;
+}
+
+button {
+    border: 1px solid #66785F;
+    background-color: #EEEFE0;
+    color: #66785F;
 }
