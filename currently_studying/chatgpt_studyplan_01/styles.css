@@ -44,3 +44,33 @@ button {
     background-color: #EEEFE0;
     color: #66785F;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    body {
+        text-align: center;
+    }
+
+    ul.benefits-ul {
+    display: inline-block;
+    text-align: left;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px){
+    body {
+        text-align: center;
+    }
+
+    ul.benefits-ul {
+    display: inline-block;
+    text-align: left;
+    }
+}
