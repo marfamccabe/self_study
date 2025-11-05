@@ -11,26 +11,12 @@ const dailyVerse = {
     Sunday: 'No power in the sky above or in the earth below - indeed, nothing in all creation will ever be able to seperate us from the love of God that is revealed in Christ Jesus our Lord (Romans 8:39)'
 };
 
-//TODO: refactor long conditional statement for daily verse lookup
 function getDailyVerse() {
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const t = new Date();
-    let today = t.getDay();
+    let today = dayNames[t.getDay()];
 
-    if (today === 0) {
-        return `Sunday's verse: ${dailyVerse.Sunday}`
-    } else if (today === 1) {
-        return `Monday's verse: ${dailyVerse.Monday}`
-    } else if (today === 2) {
-        return `Tuesday's verse: ${dailyVerse.Tuesday}`
-    } else if (today === 3) {
-        return `Wednesday's verse: ${dailyVerse.Wednesday}`
-    } else if (today === 4) {
-        return `Thursday's verse: ${dailyVerse.Thursday}`
-    } else if (today === 5) {
-        return `Friday's verse: ${dailyVerse.Friday}`
-    } else {
-        return `Saturday's verse: ${dailyVerse.Saturday}`
-    }
+    return `${today}'s verse: ${dailyVerse[today]}`;
 }
 
 function greet(name = 'partner'){
@@ -38,11 +24,11 @@ function greet(name = 'partner'){
     let time = d.getHours();
 
     if (time <= 11) {
-        return `Good morning, ${name}! ${getDailyVerse()}.`
+        return `Good morning, ${name}! ${getDailyVerse()}`
     } else if (time <= 17) {
-        return `Good afternoon, ${name}! ${getDailyVerse()}.`
+        return `Good afternoon, ${name}! ${getDailyVerse()}`
     } else {
-        return `Good evening, ${name}! ${getDailyVerse()}.`
+        return `Good evening, ${name}! ${getDailyVerse()}`
     }
 };
 
