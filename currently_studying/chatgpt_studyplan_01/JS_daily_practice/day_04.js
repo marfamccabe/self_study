@@ -9,3 +9,9 @@ const songs = [
     "  Stairway to Heaven",
     "Hotel California "
 ];
+
+const trimmedSongs = songs.map(e => e.trim());
+
+const songsInOrder = trimmedSongs.toSorted();
+
+console.log(songsInOrder)
