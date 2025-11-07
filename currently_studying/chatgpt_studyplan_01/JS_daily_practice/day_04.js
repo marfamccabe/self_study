@@ -10,8 +10,28 @@ const songs = [
     "Hotel California "
 ];
 
-const trimmedSongs = songs.map(e => e.trim());
+const forrestFrank = [
+    " Paradise ",
+    "No Longer Bound ",
+    "Celebration",
+    "Live Your Life",
+    " Celebration",
+    " Nothing Else",
+    "Paradise",
+    "Live Your Life  "
+];
 
-const songsInOrder = trimmedSongs.toSorted();
 
-console.log(songsInOrder)
+function getNewArray(arr){
+
+const trimmedArr = arr.map(e => e.trim());
+const arrInOrder = trimmedArr.toSorted();
+const newArr = [...new Set(arrInOrder)];
+
+const result = arr.length - newArr.length;
+
+return `${newArr.join(', ')} (${result} duplicate(s) removed)`
+};
+
+
+console.log(getNewArray(forrestFrank));
