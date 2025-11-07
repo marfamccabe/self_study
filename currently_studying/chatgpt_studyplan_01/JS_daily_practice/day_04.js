@@ -1,5 +1,5 @@
 // Challenge: The Playlist Organizer
-// Goal: Clean up & organize an array of song titles (remove duplicates, trim extra space, sort alphabetically, return cleaned-up playlist as a new array)
+// Goal: Clean up & organize an array of song titles (remove duplicates, trim extra space, sort alphabetically, return cleaned-up playlist as a new array, return message stating number of duplicates removed)
 
 const songs = [
     "  Wonderwall  ",
