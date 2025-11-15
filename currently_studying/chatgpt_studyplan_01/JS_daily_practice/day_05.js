@@ -9,13 +9,19 @@ const songs = [
     "Hey Jude",
     "Hey Jude",
     "  Yesterday",
+    "Take Five",
     "Imagine "
 ];
 
+
 function getNewArray(array) {
-    const trimmedArr = array.map(e => e.trim()); // trims whitespace
-    const sortedArr = trimmedArr.toSorted((a, b) => a.length - b.length); // sort by length
-    const newArr = [... new Set(sortedArr)]; // removes duplicates
+    const trimmedArr = array.map(e => e.trim());
+    const sortedArr = trimmedArr.toSorted((a, b) => {if (a.length != b.length){
+        return a.length - b.length
+    }else{
+        return 
+    }});
+    const newArr = [... new Set(sortedArr)];
 
     const result = array.length - newArr.length;
 
