@@ -16,11 +16,16 @@ const songs = [
 
 function getNewArray(array) {
     const trimmedArr = array.map(e => e.trim());
-    const sortedArr = trimmedArr.toSorted((a, b) => {if (a.length != b.length){
-        return a.length - b.length
-    }else{
-        return 
-    }});
+    const sortedArr = trimmedArr.toSorted((a,b) => {
+        const lengthDiff = a.length - b.length;
+
+        if (lengthDiff !== 0) {
+            return lengthDiff;
+        } else {
+            return a.localeCompare(b);
+        }
+    });
+
     const newArr = [... new Set(sortedArr)];
 
     const result = array.length - newArr.length;
