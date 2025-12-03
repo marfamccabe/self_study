@@ -8,28 +8,25 @@ const groceries = [
     8.25,
     0,
     4.50,
+    0,
     10.99,
     2.75,
     0
 ];
 
-// function getTotal(array) {
-//     let total = 0;
-
-//     for (let i = 0; i < array.length; i++) {
-//         total += array[i];
-//     }
-
-//     return total;
-// };
-
-function getTotal(array){
+function getTotal(array) {
     let total = 0;
+    let refunds = 0;
 
-    for (const number of array) {
-        total += number;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 0){
+            refunds += 1;
+        } else {
+            total += array[i];
+        }
     }
-    return total;
-}
+
+    return `Total spent: ${total}, Refunded items: ${refunds}`;
+};
 
 console.log(getTotal(groceries));
