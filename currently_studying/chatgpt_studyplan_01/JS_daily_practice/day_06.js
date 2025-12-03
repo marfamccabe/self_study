@@ -14,7 +14,18 @@ const groceries = [
     0
 ];
 
-function getTotal(array) {
+function getAverageCost(array) {
+    let average = 0;
+
+    for (const number of array) {
+        if (array[i] != 0) {
+
+        }
+    }
+
+}
+
+function getTotalCost(array) {
     let total = 0;
     let refunds = 0;
 
@@ -29,4 +40,4 @@ function getTotal(array) {
     return `Total spent: ${total}, Refunded items: ${refunds}`;
 };
 
-console.log(getTotal(groceries));
+console.log(getTotalCost(groceries));
