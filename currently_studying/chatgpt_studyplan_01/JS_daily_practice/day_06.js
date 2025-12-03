@@ -13,3 +13,23 @@ const groceries = [
     0
 ];
 
+// function getTotal(array) {
+//     let total = 0;
+
+//     for (let i = 0; i < array.length; i++) {
+//         total += array[i];
+//     }
+
+//     return total;
+// };
+
+function getTotal(array){
+    let total = 0;
+
+    for (const number of array) {
+        total += number;
+    }
+    return total;
+}
+
+console.log(getTotal(groceries));
